@@ -6,6 +6,9 @@
 
 /* REGOLE DI DEBUG --------------------------------- */
 
+
+/* DEBUG HEADER ------------------------------------ */
+
 .debug header{
     background-color: red;
 }
@@ -21,17 +24,68 @@
     background-color: purple;
 }
 
-/* DEBUG HEADER ------------------------------------ */
-
-
 /* DEBUG MAIN -------------------------------------- */
 
+.debug main .heading-content{
+    background-color:cadetblue;
+
+}
+
+.debug main .columns{
+    background-color: blueviolet;
+}
+
+.debug main .col-text{
+    background-color: aqua;
+    height: 400px;
+}
+
+.debug main .col-img{
+    background-color: blue;
+    height: 400px;
+}
+
+.debug main .container{
+    background-color: violet;
+    height: 800px;
+}
+
+.debug main .offers-section{
+    background-color: tomato;
+}
+
+.debug main .offers-section .columns{
+    background-color: turquoise;
+}
+
+.debug main .offers-section .col{
+    background-color: teal;
+    height: 800px;
+}
+
+.debug main .offers-section .check{
+    background-color: red;
+}
+
+.debug main .offers-section .columns.col{
+    background-color: teal;
+    height: 200px;
+}
 
 /* DEBUG FOOTER ------------------------------------ */
 
 
 /* REGOLE DI CSS ----------------------------------- */
 
+.container{
+    max-width: calc(1170px - 15%);
+    margin: 0 auto;
+}
+
+.columns{
+    width: 100%;
+    display: flex;
+}
 
 /* HEADER ------------------------------------------ */
 
@@ -72,6 +126,62 @@ header li.button{
 }
 
 /* MAIN -------------------------------------------- */
+
+main{
+    padding-top: 80px;
+}
+
+main h2{
+    margin: 20px 0
+}
+
+.heading-container{
+    background-color: #B4D0E7;
+    width: 100%;
+}
+
+.heading-content{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 35px;
+    font-size: 2em;
+}
+
+.heading-content .columns{
+    margin-top: 28px;
+}
+
+.heading-content .col-text{
+    width: 30%;
+}
+
+.heading-content .col-img{
+    width: 70%;
+}
+
+
+
+.offers-section{
+    padding-top: 50px;
+}
+
+.offers-section .check{
+    margin-right: 16px;
+}
+
+.offers-section .columns{
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.offers-section .col{
+    width: calc((100% / 3) - 20px);
+
+}
+
+.columns.col{
+    width: 100%;
+}
 
 
 /* FOOTER ------------------------------------------ */
