@@ -6,6 +6,20 @@
 
 /* REGOLE DI DEBUG --------------------------------- */
 
+.debug header{
+    background-color: red;
+}
+.debug header ul{
+    background-color: orange;
+}
+
+.debug header li{
+    background-color: yellow;
+}
+
+.debug header nav{
+    background-color: purple;
+}
 
 /* DEBUG HEADER ------------------------------------ */
 
@@ -21,6 +35,41 @@
 
 /* HEADER ------------------------------------------ */
 
+header{
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 14px;
+}
+
+header li{
+    display: inline-block;
+}
+
+.left-list li{
+    margin-right: 20px;
+}
+
+.right-list li{
+    margin-left: 20px;
+}
+
+header li.logo{
+    margin-right: 8px;
+}
+
+header li.button{
+    margin-left: 8px;
+}
 
 /* MAIN -------------------------------------------- */
 
