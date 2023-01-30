@@ -140,7 +140,7 @@ ul{
 
 header{
     height: 80px;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -226,7 +226,7 @@ main section{
 }
 
 .logo-container{
-    height: calc(100vw / 3);
+    height: calc(100% / 3);
     margin-top: 50px;
 }
 
@@ -241,7 +241,7 @@ main section{
 
 .collab-request{
     background-color: #B4D0E7;
-    width: 100vw;
+    width: 100%;
     padding: 80px;
 }
 
