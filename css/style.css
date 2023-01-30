@@ -48,10 +48,6 @@
     background-color: violet;
 }
 
-.debug main .offers-section{
-    background-color: tomato;
-}
-
 .debug main .offers-section .columns{
     background-color: turquoise;
 }
@@ -73,6 +69,26 @@
 .debug main .offers-section .columns.col{
     background-color: teal;
     height: 200px;
+}
+
+
+.debug main .collab-section .col3{
+    background-color: chartreuse;
+}
+
+.debug main .collab-section .col-2{
+    background-color: cyan;
+    border: 1px dashed black;
+}
+
+.debug main .collab-request h2{
+    background-color: cyan;
+}
+
+.debug main .collab-request span{
+    background-color: blue;
+    width: 400px;
+    height: 30px;
 }
 
 /* DEBUG FOOTER ------------------------------------ */
@@ -100,7 +116,13 @@
 
 .col-3{
     width: calc((100% / 3) - 20px);
+    flex-wrap: wrap;
+}
 
+
+.col-2{
+    width: calc(100% / 2);
+    flex-wrap: wrap;
 }
 
 /* HEADER ------------------------------------------ */
@@ -194,10 +216,48 @@ main section{
     row-gap: 30px;
 }
 
+.logo-container{
+    height: calc(100vw / 3);
+    margin-top: 50px;
+}
+
+.logo-container .col-3{
+    max-width: calc(1170px + 20%);
+    width: calc(100% / 3);
+}
+
+.collab-section .col-2{
+    height: calc(100% / 2);
+}
+
+.collab-request{
+    background-color: #B4D0E7;
+    width: 100vw;
+    padding: 80px;
+}
+
+.collab-request h2{
+    margin: 0;
+}
+
+.collab-request .container{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 150px;
+}
 
 
 
 
+.faq-section{
+    padding-bottom: 70px;
+}
+
+.faq{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0;
+}
 
 
 /* FOOTER ------------------------------------------ */
