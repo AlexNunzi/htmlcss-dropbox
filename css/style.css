@@ -6,6 +6,19 @@
 
 /* REGOLE DI DEBUG --------------------------------- */
 
+.debug .columns{
+    background-color: blueviolet;
+}
+
+.debug .col-text{
+    background-color: aqua;
+    height: 400px;
+}
+
+.debug .col-img{
+    background-color: blue;
+    height: 400px;
+}
 
 /* DEBUG HEADER ------------------------------------ */
 
@@ -31,23 +44,8 @@
 
 }
 
-.debug main .columns{
-    background-color: blueviolet;
-}
-
-.debug main .col-text{
-    background-color: aqua;
-    height: 400px;
-}
-
-.debug main .col-img{
-    background-color: blue;
-    height: 400px;
-}
-
 .debug main .container{
     background-color: violet;
-    height: 800px;
 }
 
 .debug main .offers-section{
@@ -58,9 +56,14 @@
     background-color: turquoise;
 }
 
-.debug main .offers-section .col{
+.debug main .offers-section .col-3{
     background-color: teal;
     height: 800px;
+}
+
+.debug main .business-section .col-3{
+    background-color: teal;
+    height: 500px;
 }
 
 .debug main .offers-section .check{
@@ -85,6 +88,19 @@
 .columns{
     width: 100%;
     display: flex;
+}
+
+.col-text{
+    width: 30%;
+}
+
+.col-img{
+    width: 70%;
+}
+
+.col-3{
+    width: calc((100% / 3) - 20px);
+
 }
 
 /* HEADER ------------------------------------------ */
@@ -135,6 +151,10 @@ main h2{
     margin: 20px 0
 }
 
+main section{
+    padding-top: 50px;
+}
+
 .heading-container{
     background-color: #B4D0E7;
     width: 100%;
@@ -151,20 +171,6 @@ main h2{
     margin-top: 28px;
 }
 
-.heading-content .col-text{
-    width: 30%;
-}
-
-.heading-content .col-img{
-    width: 70%;
-}
-
-
-
-.offers-section{
-    padding-top: 50px;
-}
-
 .offers-section .check{
     margin-right: 16px;
 }
@@ -174,14 +180,24 @@ main h2{
     margin: 20px 0;
 }
 
-.offers-section .col{
-    width: calc((100% / 3) - 20px);
-
-}
-
 .columns.col{
     width: 100%;
 }
+
+
+
+
+
+.business-section .columns{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+
+
+
+
 
 
 /* FOOTER ------------------------------------------ */
