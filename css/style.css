@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 /* REGOLE DI DEBUG --------------------------------- */
 
@@ -226,7 +234,7 @@ main section{
 }
 
 .logo-container{
-    height: calc(100% / 3);
+    height: calc(100vw / 3);
     margin-top: 50px;
 }
 
