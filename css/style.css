@@ -76,22 +76,22 @@
 
 
 .debug main #collab-section .col3{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 
 .debug main #collab-section .col-2{
-    background-color: cyan;
-    border: 1px dashed black;
+    /* background-color: cyan; */
+    /* border: 1px dashed black; */
 }
 
 .debug main .collab-request h2{
-    background-color: cyan;
+    /* background-color: cyan; */
 }
 
 .debug main .collab-request span{
-    background-color: blue;
-    width: 400px;
-    height: 30px;
+    /* background-color: blue; */
+    /* width: 400px; */
+    /* height: 30px; */
 }
 
 /* DEBUG FOOTER ------------------------------------ */
@@ -117,6 +117,7 @@ ul a, a.button-shape{
 .button-shape{
     padding: 10px;
     display: inline-block;
+    
 }
 
 .button-blue{
@@ -192,6 +193,7 @@ header{
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
 }
@@ -324,7 +326,7 @@ main section{
     margin-right: 3px;
 }
 
-.blue{
+.blue-check{
     color: #005EFF;
 }
 
@@ -436,6 +438,8 @@ main section{
 
 .logo-container .col-3{
     width: calc(100% / 3);
+    aspect-ratio: 1 / 1;
+
 }
 
 #collab-section .col-2{
@@ -444,7 +448,7 @@ main section{
     position: relative;
 }
 
-.logo-container img{
+.logo-container .col-2 img{
     height: 50%;
     width: 50%;
     position: absolute;
@@ -454,6 +458,61 @@ main section{
     filter: invert(100%);
 }
 
+.logo-description{
+    padding: 25px;
+    background-color: #F5F5F5;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.logo-description img{
+    width: 50%;
+}
+
+.logo-description hr{
+    width: 100px;
+    margin: 30px 0;
+}
+
+.green{
+    background-color: #A2D39B;
+}
+
+.purple{
+    background-color: #61082B;
+}
+
+.cyan{
+    background-color: #0093CE;
+}
+
+.light-red{
+    background-color: #FF1C1C;
+}
+
+.red{
+    background-color: #D5001F;
+}
+
+.gray{
+    background-color: #B4D0E7;
+}
+
+.blue{
+    background-color: #0D2481;
+}
+
+.yellow{
+    background-color: #FFD830;
+}
+
+.bright-blue{
+    color: #0303EE;
+}
+
+
+
+
 .collab-request{
     background-color: #B4D0E7;
     width: 100%;
@@ -462,11 +521,17 @@ main section{
 
 .collab-request h2{
     margin: 0;
+    color: #61082B;
+}
+
+.collab-request .button-shape{
+    border: none;
 }
 
 .collab-request .container{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     column-gap: 150px;
 }
 
