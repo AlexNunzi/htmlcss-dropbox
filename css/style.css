@@ -48,16 +48,16 @@
 }
 
 .debug main .container{
-    background-color: violet;
+    /* background-color: violet; */
 }
 
-.debug main .offers-section .columns{
-    background-color: turquoise;
+.debug main #offers-section .columns{
+    /* background-color: turquoise; */
 }
 
-.debug main .offers-section .col-3{
-    background-color: teal;
-    height: 800px;
+.debug main #offers-section .col-3{
+    /* background-color: teal; */
+    /* height: 800px; */
 }
 
 .debug main .business-section .col-3{
@@ -65,11 +65,11 @@
     height: 500px;
 }
 
-.debug main .offers-section .check{
-    background-color: red;
+.debug main #offers-section .check{
+    /* background-color: red; */
 }
 
-.debug main .offers-section .columns.col{
+.debug main #offers-section .columns.col{
     background-color: teal;
     height: 200px;
 }
@@ -105,9 +105,10 @@ ul{
     list-style: none;
 }
 
-a{
+ul a, a.button-shape{
     text-decoration: none;
 }
+
 
 .button-shape{
     padding: 10px;
@@ -262,17 +263,58 @@ main section{
     margin-top: 28px;
 }
 
-.offers-section .check{
+#offers-section .check{
     margin-right: 16px;
+    font-size: 16px;
 }
 
-.offers-section .columns{
+.checked::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 5px solid #0061FF;
+    margin-right: 3px;
+}
+
+.unchecked::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #CDCDD0;
+    margin-right: 3px;
+}
+
+#offers-section .columns{
     justify-content: space-between;
     margin: 20px 0;
 }
 
+#offers-section .col-3{
+    border: 1px solid #D0D0D3;
+}
+
 .columns.col{
     width: 100%;
+}
+
+.offers-target{
+    text-align: center;
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #D0D0D3;
+}
+
+.offers-details{
+    padding: 26px 20px;
+}
+
+.offers-description{
+    text-indent: -0.4em;
+    padding-left: 10px;
 }
 
 
