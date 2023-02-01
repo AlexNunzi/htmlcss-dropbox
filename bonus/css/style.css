@@ -206,7 +206,7 @@ header nav{
     align-items: center;
 }
 
-header ul{
+header ul:not(.dropdown-menu){
     display: flex;
     align-items: center;
 }
@@ -224,9 +224,26 @@ header .button-shape{
     display: inline;
 }
 
-nav li{
+nav li:not(.dropdown-menu){
     padding: 0 10px;
+    position: relative;
 }
+
+nav li .dropdown-menu{
+    background-color: #ffffff;
+    border: 1px solid #666666;
+    display:none;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    z-index: 50;
+    line-height: 30px;
+}
+
+.dropdown-menu a{
+    padding: 0;
+}
+
 
 nav img{
     vertical-align: middle;
@@ -594,7 +611,7 @@ footer hr{
 /* ANIMAZIONI -------------------------------------- */
 
 
-nav li:hover:not(#nav-logo, #nav-button){
+nav li:hover:not(#nav-logo, #nav-button, .dropdown-menu li){
     border-bottom: 2px solid #000000;
 }
 
@@ -606,8 +623,6 @@ nav li:hover:not(#nav-logo, #nav-button){
     background-color: #cccccc;
     border: 1px solid #555555;
 }
-
-.butt
 
 html{
     scroll-behavior: smooth;
@@ -625,11 +640,13 @@ html{
     display: inline;
 }
 
-
-
 .faq:hover .faq-answer{
     padding-top: 20px;
     width: 100%;
+    display: block;
+}
+
+nav li:hover .dropdown-menu{
     display: block;
 }
 
