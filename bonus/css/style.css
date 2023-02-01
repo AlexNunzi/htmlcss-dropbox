@@ -588,3 +588,19 @@ footer hr{
 nav li:hover:not(#nav-logo, #nav-button){
     border-bottom: 2px solid #000000;
 }
+
+.button-blue:hover{
+    background-color: #0075FF;
+}
+
+.button-white:hover{
+    background-color: #cccccc;
+    border: 1px solid #555555;
+}
+
+.butt
+
+html{
+    scroll-behavior: smooth;
+}
+
