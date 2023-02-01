@@ -12,12 +12,12 @@
     /* background-color: blueviolet; */
 }
 
-.debug .col-30{
+.debug .w-30{
     /* background-color: aqua; */
     /* height: 400px; */
 }
 
-.debug .col-70{
+.debug .w-70{
     /* background-color: blue; */
     /* height: 400px; */
 }
@@ -69,7 +69,7 @@
     /* background-color: red; */
 }
 
-.debug main #offers-section .columns.col{
+.debug main #offers-section .columns.col-1{
     /* background-color: teal; */
     /* height: 200px; */
 }
@@ -157,20 +157,20 @@ section .button-shape{
     padding-right: 25px;
 }
 
-.col-30{
+.w-30{
     width: 30%;
 }
 
 
-.col-40{
+.w-40{
     width: 40%;
 }
 
-.col-60{
+.w-60{
     width: 60%;
 }
 
-.col-70{
+.w-70{
     width: 70%;
 }
 
@@ -351,18 +351,21 @@ main section{
     margin: 30px 0;
 }
 
+#offers-section .col-3{
+    align-self: stretch;
+}
 
-#offers-section .col-3, #offers-section .columns.col{
+#offers-section .col-3, #offers-section .columns.col-1{
     border: 1px solid #D0D0D3;
 }
 
 
-.columns.col{
+.columns.col-1{
     display: block;
     width: 100%;
 }
 
-.columns.col .columns{
+.columns.col-1 .columns{
     padding: 0 20px;
 }
 
@@ -390,7 +393,7 @@ main section{
     margin-bottom: 12px;
 }
 
-.columns.col .offers-price{
+.columns.col-1 .offers-price{
     margin-bottom: 50px;
 }
 
@@ -431,7 +434,7 @@ main section{
     margin-top: 80px;
 }
 
-#partner-section .col-40{
+#partner-section .w-40{
     padding-left: 30px;
 }
 
