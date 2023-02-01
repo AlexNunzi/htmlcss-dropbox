@@ -546,7 +546,16 @@ main section{
 .faq{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px 20px 20px 0;
+}
+
+.chevron-up{
+    display: none;
+}
+
+.faq-answer{
+    display: none;
 }
 
 /* FOOTER ------------------------------------------ */
@@ -602,5 +611,25 @@ nav li:hover:not(#nav-logo, #nav-button){
 
 html{
     scroll-behavior: smooth;
+}
+
+.faq:hover{
+    cursor: pointer;
+}
+
+.faq:hover .chevron-down{
+    display: none;
+}
+
+.faq:hover .chevron-up{
+    display: inline;
+}
+
+
+
+.faq:hover .faq-answer{
+    padding-top: 20px;
+    width: 100%;
+    display: block;
 }
 
