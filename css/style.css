@@ -186,6 +186,17 @@ section .button-shape{
     flex-wrap: wrap;
 }
 
+.selected::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 12px solid rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    height: calc(100% - 24px);
+    width: calc(100% - 24px);
+}
+
 /* HEADER ------------------------------------------ */
 
 header{
@@ -295,7 +306,6 @@ main section{
 .heading-content .columns{
     margin-top: 28px;
 }
-
 
 
 
@@ -449,7 +459,7 @@ main section{
 }
 
 .logo-container .col-2 img{
-    height: 50%;
+    /* height: 50%; */
     width: 50%;
     position: absolute;
     top: 50%;
