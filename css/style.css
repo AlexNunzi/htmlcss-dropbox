@@ -201,6 +201,7 @@ section .button-shape{
 
 header{
     background-color: #ffffff;
+    line-height: 80px;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -215,11 +216,9 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 14px;
 }
 
 header ul{
-    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -230,22 +229,27 @@ header li{
 
 header ul a{
     color: #000000;
+    padding: 30px 0;
 }
 
-.left-list li{
-    margin-right: 25px;
+header .button-shape{
+    display: inline;
 }
 
-.right-list li{
-    margin-left: 25px;
+nav li{
+    padding: 0 10px;
+}
+
+nav img{
+    vertical-align: middle;
 }
 
 header li.logo{
-    margin-right: 8px;
+    padding-right: 4px;
 }
 
 header li.button{
-    margin-left: 8px;
+    padding-left: 4px;
 }
 
 /* MAIN -------------------------------------------- */
@@ -604,6 +608,5 @@ footer hr{
 }
 
 /* ANIMAZIONI -------------------------------------- */
-
 
 
