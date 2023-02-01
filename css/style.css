@@ -98,7 +98,7 @@
 
 
 /* REGOLE DI CSS ----------------------------------- */
-
+/* REGOLE GENERALI --------------------------------- */
 
 img{
     width: 100%;
@@ -117,7 +117,6 @@ ul a, a.button-shape{
 .button-shape{
     padding: 10px;
     display: inline-block;
-    
 }
 
 .button-blue{
@@ -207,6 +206,7 @@ header{
     z-index: 999;
     top: 0;
     left: 0;
+    box-shadow: 0px 0px 5px 0px #B4D0E7;
 }
 
 header nav{
@@ -248,6 +248,7 @@ header li.button{
 }
 
 /* MAIN -------------------------------------------- */
+/* REGOLE GENERALI --------------------------------- */
 
 main{
     width: 100%;
@@ -288,10 +289,12 @@ main section{
     padding-top: 50px;
 }
 
+
+/* HEADING CONTAINER ------------------------------- */
+
 #heading-container{
     background-color: #B4D0E7;
     width: 100%;
-    max-height: 610px;
 }
 
 #jumbo{
@@ -301,6 +304,8 @@ main section{
 .heading-content{
     padding-top: 35px;
     font-size: 2em;
+    position: relative;
+    top: 80px;
 }
 
 .heading-content .columns{
@@ -308,7 +313,7 @@ main section{
 }
 
 
-
+/* OFFERS SECTION ---------------------------------- */
 
 
 #offers-section .check{
@@ -345,6 +350,7 @@ main section{
     margin: 30px 0;
 }
 
+
 #offers-section .col-3, #offers-section .columns.col{
     border: 1px solid #D0D0D3;
 }
@@ -369,7 +375,6 @@ main section{
 .col-3 .offers-details{
     padding: 26px 20px;
 }
-
 
 .offers-details div{
     font-size: 14px;
@@ -399,7 +404,6 @@ main section{
     margin-bottom: 18px;
 }
 
-
 .offers-description i{
     margin-right: 8px;
 }
@@ -419,6 +423,7 @@ main section{
 }
 
 
+/* PARTNER SECTION --------------------------------- */
 
 
 #partner-section{
@@ -430,7 +435,7 @@ main section{
 }
 
 
-
+/* BUSINESS SECTION -------------------------------- */
 
 
 .business-section .columns{
@@ -521,6 +526,7 @@ main section{
 }
 
 
+/* COLLAB SECTION ---------------------------------- */
 
 
 .collab-request{
@@ -546,6 +552,7 @@ main section{
 }
 
 
+/* FAQ SECTION ------------------------------------- */
 
 
 .faq-section{
