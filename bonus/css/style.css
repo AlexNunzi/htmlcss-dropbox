@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* REGOLE DI DEBUG --------------------------------- */
+
+.debug .columns{
+    /* background-color: blueviolet; */
+}
+
+.debug .w-30{
+    /* background-color: aqua; */
+    /* height: 400px; */
+}
+
+.debug .w-70{
+    /* background-color: blue; */
+    /* height: 400px; */
+}
+
+.debug ul{
+    /* background-color: orange; */
+}
+
+/* DEBUG HEADER ------------------------------------ */
+
+.debug header{
+    /* background-color: red; */
+}
+
+.debug header li{
+    /* background-color: yellow; */
+}
+
+.debug header nav{
+    /* background-color: purple; */
+}
+
+/* DEBUG MAIN -------------------------------------- */
+
+.debug main .heading-content{
+    /* background-color:cadetblue; */
+
+}
+
+.debug main .container{
+    /* background-color: violet; */
+}
+
+.debug main #offers-section .columns{
+    /* background-color: turquoise; */
+}
+
+.debug main #offers-section .col-3{
+    /* background-color: teal; */
+    /* height: 800px; */
+}
+
+.debug main .business-section .col-3{
+    /* background-color: teal; */
+    /* height: 500px; */
+}
+
+.debug main #offers-section .check{
+    /* background-color: red; */
+}
+
+.debug main #offers-section .columns.col-1{
+    /* background-color: teal; */
+    /* height: 200px; */
+}
+
+.debug main #collab-section .col3{
+    /* background-color: chartreuse; */
+}
+
+.debug main #collab-section .col-2{
+    /* background-color: cyan; */
+    /* border: 1px dashed black; */
+}
+
+.debug main .collab-request h2{
+    /* background-color: cyan; */
+}
+
+.debug main .collab-request span{
+    /* background-color: blue; */
+    /* width: 400px; */
+    /* height: 30px; */
+}
+
+/* DEBUG FOOTER ------------------------------------ */
+
+
+/* REGOLE DI CSS ----------------------------------- */
+/* REGOLE GENERALI --------------------------------- */
+
+img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+ul a, a.button-shape{
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-shape{
+    font-size: 14px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.button-blue{
+    background-color: #0061FF;
+    color: #ffffff;
+}
+
+.button-white{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+section .button-shape{
+    margin-bottom: 20px;
+}
+
+.mainfoot-container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: calc(1170px - 15%);
+    margin: 0 auto;
+}
+
+.columns{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.col-3{
+    width: calc((100% / 3) - 20px);
+    flex-wrap: wrap;
+}
+
+.col-2{
+    width: calc(100% / 2);
+    flex-wrap: wrap;
+}
+
+.selected::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 12px solid rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    height: calc(100% - 24px);
+    width: calc(100% - 24px);
+}
+
+/* HEADER ------------------------------------------ */
+
+header{
+    background-color: #ffffff;
+    line-height: 80px;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 5px 0px #B4D0E7;
+}
+
+header nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    display: inline-block;
+}
+
+header ul a{
+    color: #000000;
+    padding: 30px 0;
+}
+
+header .button-shape{
+    display: inline;
+}
+
+nav li{
+    padding: 0 10px;
+}
+
+nav img{
+    vertical-align: middle;
+}
+
+header li.logo{
+    padding-right: 4px;
+}
+
+header li.button{
+    padding-left: 4px;
+}
+
+/* MAIN -------------------------------------------- */
+/* REGOLE GENERALI --------------------------------- */
+
+main{
+    width: 100%;
+    padding-top: 80px;
+}
+
+main h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+main h2{
+    font-size: 32px;
+    margin: 80px 0 50px;
+}
+
+main h3{
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+main p{
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+.note{
+    margin-bottom: 80px;
+}
+
+.jump-button{
+    font-size: 40px;
+    color: #000000;
+}
+
+.heading-text{
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+main section{
+    padding-top: 50px;
+}
+
+/* HEADING CONTAINER ------------------------------- */
+
+#heading-container{
+    background-color: #B4D0E7;
+    width: 100%;
+}
+
+#jumbo{
+    max-width: 100%;
+}
+
+.heading-content{
+    padding-top: 35px;
+    font-size: 2em;
+    position: relative;
+    top: 80px;
+}
+
+.heading-content .columns{
+    margin-top: 28px;
+}
+
+/* OFFERS SECTION ---------------------------------- */
+
+#offers-section .check{
+    margin-right: 16px;
+    font-size: 16px;
+}
+
+.checked::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 5px solid #0061FF;
+    margin-right: 3px;
+}
+
+.unchecked::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #CDCDD0;
+    margin-right: 3px;
+}
+
+.blue-check{
+    color: #005EFF;
+}
+
+#offers-section .columns{
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#offers-section .col-3{
+    align-self: stretch;
+}
+
+#offers-section .col-3, #offers-section .columns.col-1{
+    border: 1px solid #D0D0D3;
+}
+
+.columns.col-1{
+    display: block;
+    width: 100%;
+}
+
+.columns.col-1 .columns{
+    padding: 0 20px;
+}
+
+.offers-target{
+    text-align: center;
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #D0D0D3;
+}
+
+.col-3 .offers-details{
+    padding: 26px 20px;
+}
+
+.offers-details{
+    font-size: 14px;
+}
+
+.euro::before{
+    content: '\20AC\00A0';
+}
+
+.offers-price{
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.columns.col-1 .offers-price{
+    margin-bottom: 50px;
+}
+
+.offers-period{
+    color: #67656E;
+    margin-bottom: 48px;
+}
+
+.offers-description{
+    text-indent: -0.7em;
+    padding-left: 16px;
+    margin-bottom: 18px;
+}
+
+.offers-description i{
+    margin-right: 8px;
+}
+
+.offers-details .button-shape{
+    margin: 48px 0 24px;
+    width: 100%;
+}
+
+.offers-details hr{
+    margin: 35px 0 48px;
+    width: 50px;
+}
+
+.offers-details h4{
+    margin-bottom: 48px;
+}
+
+/* PARTNER SECTION --------------------------------- */
+
+#partner-section{
+    margin-top: 80px;
+}
+
+#partner-section .w-40{
+    padding-left: 30px;
+}
+
+/* BUSINESS SECTION -------------------------------- */
+
+.business-section .columns{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.logo-container{
+    height: calc(100% / 3);
+    max-width: calc(1170px + 20%);
+    margin: 50px auto 0;
+}
+
+.logo-container .col-3{
+    width: calc(100% / 3);
+    aspect-ratio: 1 / 1;
+}
+
+#collab-section .col-2{
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+.logo-container .col-2 img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%);
+}
+
+.logo-description{
+    padding: 25px;
+    background-color: #F5F5F5;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.logo-description img{
+    width: 50%;
+}
+
+.logo-description hr{
+    width: 100px;
+    margin: 30px 0;
+}
+
+.green{
+    background-color: #A2D39B;
+}
+
+.purple{
+    background-color: #61082B;
+}
+
+.cyan{
+    background-color: #0093CE;
+}
+
+.light-red{
+    background-color: #FF1C1C;
+}
+
+.red{
+    background-color: #D5001F;
+}
+
+.gray{
+    background-color: #B4D0E7;
+}
+
+.blue{
+    background-color: #0D2481;
+}
+
+.yellow{
+    background-color: #FFD830;
+}
+
+.bright-blue{
+    color: #0303EE;
+}
+
+/* COLLAB SECTION ---------------------------------- */
+
+.collab-request{
+    background-color: #B4D0E7;
+    width: 100%;
+    padding: 80px;
+}
+
+.collab-request h2{
+    margin: 0;
+    color: #61082B;
+}
+
+.collab-request .button-shape{
+    border: none;
+}
+
+.collab-request .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 150px;
+}
+
+/* FAQ SECTION ------------------------------------- */
+
+.faq-section{
+    padding-bottom: 70px;
+}
+
+.faq{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0;
+}
+
+/* FOOTER ------------------------------------------ */
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.list-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.list-container h3{
+    margin-bottom: 14px;
+}
+
+.list-container ul li{
+    margin-bottom: 6px;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+footer hr{
+    width: 120px;
+}
+
+.language{
+    padding: 30px 0;
+}
+
+/* ANIMAZIONI -------------------------------------- */
+
+
+nav li:hover:not(#nav-logo, #nav-button){
+    border-bottom: 2px solid #000000;
+}
